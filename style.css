@@ -158,7 +158,110 @@ header{
     color: yellow; 
   }
 
+@media (max-width: 1250px) {
+    
+    .heading h1{
+        font-size: 35px;
+    }
+    .heading h1::after{
+        right: 230px;
+    }
+    .heading p{
+        font-size: 1.2em;
+        width: 70%;
+        margin-left: 100px;
+    }
+    
+}
+@media (max-width: 1145px) {
+    
+    .heading h1{
+        font-size: 30px;
+    }
+    .heading h1::after{
+        right: 200px;
+    }
+    .heading p{
+        font-size: 1.15em;
+        width: 70%;
+    }
+}
+@media (max-width: 1000px) {
+    
+    .heading h1{
+        font-size: 25px;
+    }
+    .heading h1::after{
+        right: 150px;
+    }
+    .heading p{
+        font-size: 1.1em;
+        width: 70%;
+    }
+    .title::after{
+        height: 220px;
+    }
+}
+@media (max-width: 800px) {
+    
+    .heading h1{
+        font-size: 25px;
+    }
+    .heading h1::after{
+        right: 120px;
+        bottom: 1px;
+    }
+    .heading p{
+        font-size: 1em;
+        width: 70%;
+    }
+    .title{
+        left: 80px;
+    }
+    .title::after{
+        right: -30px;
+    }
+    .title::after{
+        height: 200px;
+    }
+    .title{
+        width: 40%; 
+        left: 50px;
+    }
+    .fixed-menu{
+        display: none; 
+    }
+}
+@media (max-width: 600px) {
 
+    .heading h1{
+        font-size: 15px;
+        width: 90%;
+    }
+    .title::after{
+        height: 200px;
+    }
+    .title{
+        width: 40%; 
+        top: 50px;
+        left: 10px;
+    }
+    .heading::before{
+        width: 7%;
+        height: 7px;
+        top: 10px;
+        left: 20px;
+    }
+    .heading h1::after{
+        width: 7%;
+        height: 7px;
+    }
+    .heading p{
+        font-size: 0.8em;
+        width: 70%;
+        margin-left: 80px;
+    }
+}
 
 /* Info events*/
 .events{

@@ -15,38 +15,66 @@ window.addEventListener("scroll",function(){
 
     var menu = document.getElementsByClassName('menu-opacity');
 
-    if(window.pageYOffset < 400){
-        menu[0].style.backgroundColor = "rgba(0, 0, 0, 0.2)"
-    }   
-    if(window.pageYOffset > 450){
-        target[0].style.opacity = "1";
-        menu[0].style.backgroundColor = "#191919"
-    }
-    if(window.pageYOffset > 950){
-        target1[0].style.marginLeft = "1px";
-    }
-    if(window.pageYOffset > 1000){
-        target2[0].style.opacity = "1";
-    }
-    if(window.pageYOffset > 1600){
-        target3[0].style.opacity = "1";
-    }
-    if(window.pageYOffset > 1800){
-        target4[0].style.opacity = "1";
-        target5[0].style.opacity = "1";
+    if(screen.width > 700) {
+
+        if(window.pageYOffset < 400){
+            menu[0].style.backgroundColor = "rgba(0, 0, 0, 0.2)"
+        }   
+        if(window.pageYOffset > 450){
+            target[0].style.opacity = "1";
+            menu[0].style.backgroundColor = "#191919"
+        }
+        if(window.pageYOffset > 950){
+            target1[0].style.marginLeft = "1px";
+        }
+        if(window.pageYOffset > 1000){
+            target2[0].style.opacity = "1";
+        }
+        if(window.pageYOffset > 1600){
+            target3[0].style.opacity = "1";
+        }
+        if(window.pageYOffset > 1800){
+            target4[0].style.opacity = "1";
+            target5[0].style.opacity = "1";
+        }
+    
+        if(window.pageYOffset > 3150){
+            target6[0].style.opacity = "1";
+        }
+        if(window.pageYOffset > 3350){
+            target7[0].style.opacity = "1";
+        }
+        if(window.pageYOffset > 3550){
+            target8[0].style.opacity = "1";
+        }
+        if(window.pageYOffset > 3750){
+            target9[0].style.opacity = "1";
+        }
+
     }
 
-    if(window.pageYOffset > 3150){
-        target6[0].style.opacity = "1";
-    }
-    if(window.pageYOffset > 3350){
-        target7[0].style.opacity = "1";
-    }
-    if(window.pageYOffset > 3550){
-        target8[0].style.opacity = "1";
-    }
-    if(window.pageYOffset > 3750){
-        target9[0].style.opacity = "1";
+    else if(screen.width < 699) {
+
+            target[0].style.opacity = "1";
+            target1[0].style.marginLeft = "1px";
+    
+    
+            target2[0].style.opacity = "1";
+        
+       
+            target3[0].style.opacity = "1";
+       
+            target4[0].style.opacity = "1";
+            target5[0].style.opacity = "1";
+        
+            target6[0].style.opacity = "1";
+       
+            target7[0].style.opacity = "1";
+        
+            target8[0].style.opacity = "1";
+        
+            target9[0].style.opacity = "1";
+
     }
 
 },false);
