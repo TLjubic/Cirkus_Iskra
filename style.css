@@ -206,6 +206,7 @@ header{
     
     .heading h1{
         font-size: 25px;
+        left: 40px;
     }
     .heading h1::after{
         right: 120px;
@@ -215,14 +216,9 @@ header{
         font-size: 1em;
         width: 70%;
     }
-    .title{
-        left: 80px;
-    }
-    .title::after{
-        right: -30px;
-    }
     .title::after{
         height: 200px;
+        right: -30px;
     }
     .title{
         width: 40%; 
@@ -239,7 +235,41 @@ header{
         width: 90%;
     }
     .title::after{
-        height: 200px;
+        height: 170px;
+    }
+    .title{
+        width: 40%; 
+        top: 50px;
+        left: 10px;
+    }
+    .heading::before{
+        width: 7%;
+        height: 7px;
+        top: 10px;
+        left: 20px;
+    }
+    .heading h1::after{
+        width: 7%;
+        height: 7px;
+    }
+    .heading p{
+        font-size: 0.8em;
+        width: 70%;
+        margin-left: 80px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    header{
+        width: 150%;
+    }
+    .heading h1{
+        font-size: 15px;
+        width: 90%;
+    }
+    .title::after{
+        height: 170px;
     }
     .title{
         width: 40%; 
