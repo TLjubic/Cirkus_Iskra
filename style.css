@@ -158,140 +158,6 @@ header{
     color: yellow; 
   }
 
-@media (max-width: 1250px) {
-    
-    .heading h1{
-        font-size: 35px;
-    }
-    .heading h1::after{
-        right: 230px;
-    }
-    .heading p{
-        font-size: 1.2em;
-        width: 70%;
-        margin-left: 100px;
-    }
-    
-}
-@media (max-width: 1145px) {
-    
-    .heading h1{
-        font-size: 30px;
-    }
-    .heading h1::after{
-        right: 200px;
-    }
-    .heading p{
-        font-size: 1.15em;
-        width: 70%;
-    }
-}
-@media (max-width: 1000px) {
-    
-    .heading h1{
-        font-size: 25px;
-    }
-    .heading h1::after{
-        right: 150px;
-    }
-    .heading p{
-        font-size: 1.1em;
-        width: 70%;
-    }
-    .title::after{
-        height: 220px;
-    }
-}
-@media (max-width: 800px) {
-    
-    .heading h1{
-        font-size: 25px;
-        left: 40px;
-    }
-    .heading h1::after{
-        right: 120px;
-        bottom: 1px;
-    }
-    .heading p{
-        font-size: 1em;
-        width: 70%;
-    }
-    .title::after{
-        height: 200px;
-        right: -30px;
-    }
-    .title{
-        width: 40%; 
-        left: 50px;
-    }
-    .fixed-menu{
-        display: none; 
-    }
-}
-@media (max-width: 600px) {
-
-    .heading h1{
-        font-size: 15px;
-        width: 90%;
-    }
-    .title::after{
-        height: 170px;
-    }
-    .title{
-        width: 40%; 
-        top: 50px;
-        left: 10px;
-    }
-    .heading::before{
-        width: 7%;
-        height: 7px;
-        top: 10px;
-        left: 20px;
-    }
-    .heading h1::after{
-        width: 7%;
-        height: 7px;
-    }
-    .heading p{
-        font-size: 0.8em;
-        width: 70%;
-        margin-left: 80px;
-    }
-}
-
-@media (max-width: 320px) {
-
-    header{
-        width: 150%;
-    }
-    .heading h1{
-        font-size: 15px;
-        width: 90%;
-    }
-    .title::after{
-        height: 170px;
-    }
-    .title{
-        width: 40%; 
-        top: 50px;
-        left: 10px;
-    }
-    .heading::before{
-        width: 7%;
-        height: 7px;
-        top: 10px;
-        left: 20px;
-    }
-    .heading h1::after{
-        width: 7%;
-        height: 7px;
-    }
-    .heading p{
-        font-size: 0.8em;
-        width: 70%;
-        margin-left: 80px;
-    }
-}
 
 /* Info events*/
 .events{
@@ -569,7 +435,7 @@ header{
     top: 0;
     transform: rotate(5deg);
     overflow: hidden;
-    left: -8.20%;
+    left: -8.35%;
     margin-top: -60px; 
     z-index: -50;
     border-top: 3px solid rgb(177, 177, 0);
@@ -1106,7 +972,7 @@ footer h2{
 }
 .footer-container{
     display: grid;
-    grid-template-columns: 33% 33% auto;
+    grid-template-columns: auto auto auto;
     grid-column-gap: 2%;
 }
 .footer-left p{
@@ -1129,7 +995,6 @@ footer h2{
 }
 .footer-nav{
     margin: 0;
-    padding-right: 40px;
     padding-top: 15px;
 }
 .footer-nav ul li{
@@ -1139,12 +1004,12 @@ footer h2{
 }
 .footer-nav a{
     color: grey;
-    padding: 2px 10px 2px 2px;
+    padding: 2px 0px 2px 2px;
     display: block;
     text-align: left;
     background-color: rgba(170, 170, 0, 0.1);
-    padding: 2px;
-    margin: 2px;
+    padding: 2px 0;
+    margin: 2px 0;
     position: relative;
     text-decoration: none;
     letter-spacing: .1em;
@@ -1156,9 +1021,6 @@ footer h2{
 }
 .footer-nav li:hover a, .footer-nav li:hover i{
     color: white;
-}
-.footer-nav ul{
-    padding-left: 10px;
 }
 .footer-container h2{
     position: relative;
@@ -1200,4 +1062,561 @@ footer h2{
     bottom: -2px;
     right: 90px;
     transform: rotate(-10deg);
+}
+
+
+
+
+
+
+@media (max-width: 1250px) {
+    
+    .heading h1{
+        font-size: 35px;
+    }
+    .heading h1::after{
+        right: 230px;
+    }
+    .heading p{
+        font-size: 1.2em;
+        width: 70%;
+        margin-left: 100px;
+    }
+    
+}
+@media (max-width: 1145px) {
+    
+    .heading h1{
+        font-size: 30px;
+    }
+    .heading h1::after{
+        right: 200px;
+    }
+    .heading p{
+        font-size: 1.15em;
+        width: 70%;
+    }
+}
+@media (max-width: 1000px) {
+    
+    
+    .heading h1{
+        font-size: 25px;
+    }
+    .heading h1::after{
+        right: 150px;
+    }
+    .heading p{
+        font-size: 1.1em;
+        width: 70%;
+    }
+    .title::after{
+        height: 220px;
+    }
+    .events{
+        width: 90%;  
+        margin: 0 auto;
+    }
+    .events{
+        display: grid;
+        grid-template-columns: auto;
+        position: relative;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .ev-pl li:first-child {
+        margin-left: 25%;
+    }
+    .ev-pl li{
+        display: inline-block; 
+        position: relative;
+        margin: auto;
+        font-size: 2em;
+        text-align: left;
+        font-family: 'Fjalla One', sans-serif;
+        transition: 0.3s;
+        width: 15%;
+    }
+    .ev-pl li:hover{
+        padding-left: 0;
+    }
+    .info{
+        background-color: #292929;
+        width: 90%;
+        height: 300px;
+        margin: 50px auto 0 7%;
+        position: relative;
+    }
+    .info-card{
+        padding: 50px;
+        color: grey;
+        margin: 5px;
+        border-right: 1px solid grey;
+    }
+    .noColor-section{
+        width: 90%;
+        margin: 0 auto;
+        height: 350px; 
+    }
+    .imgColor-section{
+        position: absolute;
+        width: 50%;
+        height: 250px; 
+        margin-top: -100px;
+    }
+    .text-section{
+        width: 90%;
+        padding: 30px;
+        position: relative;
+        margin-top: -250px;
+    }
+    .text-section h3::after{
+        width: 10%;
+    }
+    .second-text{
+        margin-top: 200px;
+    }
+    .text-section p{
+        margin: 10px 0 0 10px;
+        font-size: 1.1em;
+        color: gray;
+    }
+    .performances{
+        height: 800px;
+    }
+    .paris{
+        height: 250px;
+    }
+    .parisText{
+        top: 35%;
+        left: -33%;
+        padding: 20px 5px 20px 20px;
+    }
+    .london{
+        height: 250px;
+        top: 200px;
+    }
+    .londonText{
+        top: 35%;
+        padding: 20px 5px 20px 20px;
+    }
+    .milano{
+        height: 250px;
+        top: 400px;
+    }
+    .milanoText{
+        top: 35%;
+        left: -33%;
+        padding: 20px 5px 20px 20px;
+    }
+    .moskva{
+        height: 250px;
+        top: 600px;
+    }
+    .moskvaText{
+        top: 35%;
+        padding: 20px 5px 20px 20px;
+    }
+    
+}
+@media (max-width: 800px) {
+    
+    .heading h1{
+        font-size: 25px;
+        left: 40px;
+    }
+    .heading h1::after{
+        right: 120px;
+        bottom: 1px;
+    }
+    .heading p{
+        font-size: 1em;
+        width: 70%;
+    }
+    .title::after{
+        height: 200px;
+        right: -30px;
+    }
+    .title{
+        width: 40%; 
+        left: 20px;
+        top: 200px;
+    }
+    .fixed-menu{
+        display: none; 
+    }
+    .info-card{
+        height: 100px;
+        padding: 20px 0 0 10px;
+        margin-top: 40px;
+        color: grey;
+        margin-bottom: 5px;
+        border-right: 1px solid grey;
+    }
+    .events{
+        margin-left: 1px;
+    }
+    .info a{
+        right: 7%;
+        bottom: 15%;
+    }
+    .noColor-section{
+        width: 100%;
+        margin: 0 auto 0 -3%;
+        height: 300px; 
+    }
+    .imgColor-section{
+        position: absolute;
+        width: 50%;
+        height: 200px; 
+        margin-top: -80px;
+    }
+    .text-section{
+        width: 90%;
+        padding: 30px;
+        position: relative;
+        margin-top: -250px;
+    }
+    .text-section h3::after{
+        width: 10%;
+    }
+    .second-text{
+        margin-top: 200px;
+    }
+    .text-section p{
+        margin: 10px 0 0 10px;
+        font-size: 1em;
+        color: gray;
+    }
+    .stats{
+        width: 108%;
+        font-size: 20px;
+        margin-left: -8%;
+    }
+    .stats img{
+        width: 80px; 
+    }
+    .statsText::after{
+        width: 70px;
+        height: 30px;
+        top: 20px;
+        right: 100px;
+    }
+    .performances{
+        height: 800px;
+        width: 108%;
+        margin-left: -8%;
+    }
+    .paris{
+        height: 200px;
+    }
+    .parisText{
+        top: 32%;
+        left: -33%;
+        padding: 20px 5px 20px 20px;
+    }
+    .london{
+        height: 200px;
+    }
+    .londonText{
+        top: 32%;
+        padding: 20px 5px 20px 20px;
+    }
+    .milano{
+        height: 200px;
+    }
+    .milanoText{
+        top: 32%;
+        left: -33%;
+        padding: 20px 5px 20px 20px;
+    }
+    .moskva{
+        height: 200px;
+    }
+    .moskvaText{
+        top: 32%;
+        padding: 20px 5px 20px 20px;
+    }
+    footer{
+        width: auto;
+        margin-left: -8%;
+    }
+    .footer-left i{
+        font-size: 1.5em;
+    }
+    footer p{
+        font-size: 0.8em;
+    }
+    .stay::after{
+        bottom: 0px;
+        right: 25px;
+    }
+    .about::after{
+        bottom: -2px;
+        right: 45px;
+    }
+    .menu::after{
+        bottom: -2px;
+        right: 40px;
+    }
+}
+@media (max-width: 600px) {
+
+    .mobile{
+        width: 100%; 
+    }
+    .heading h1{
+        font-size: 15px;
+        width: 90%;
+    }
+    .title::after{
+        height: 170px;
+    }
+    .title{
+        width: 40%; 
+        top: 200px;
+        left: 10px;
+    }
+    .heading::before{
+        width: 7%;
+        height: 7px;
+        top: 10px;
+        left: 20px;
+    }
+    .heading h1::after{
+        width: 7%;
+        height: 7px;
+        right: 90px;
+    }
+    .heading p{
+        font-size: 0.8em;
+        width: 70%;
+        margin-left: 80px;
+    }
+    .info-text{
+        padding: 30px;
+        color: grey;
+        font-family: 'Lato', sans-serif;
+        font-size: 15px;
+    }
+    .info-card img{
+        margin: 2px 10px 0 0;
+    }
+    .info a{
+        right: 5%;
+        bottom: 10%;
+    }
+    .ev-pl li:first-child {
+        margin-top: 50px;
+        margin-right: 5%;
+    }
+    .ev-pl {
+        margin-left: -2%;
+    }
+    .info-card::after{
+        bottom: 10px;
+    }
+    .noColor-section{
+        width: 100%;
+        margin: 0 auto 0 -3%;
+        height: 200px; 
+    }
+    .imgColor-section{
+        position: absolute;
+        width: 50%;
+        height: 120px; 
+        margin-top: -50px;
+    }
+    .text-section{
+        width: 90%;
+        padding: 30px;
+        position: relative;
+        margin-top: -300px;
+        margin-left: -30px;
+    }
+    .text-section h3::after{
+        width: 10%;
+    }
+    .second-text{
+        margin-top: 100px;
+    }
+    .text-section p{
+        margin: 10px 0 0 10px;
+        font-size: 0.9em;
+        color: gray;
+    }
+    .stats{
+        width: 108%;
+        font-size: 15px;
+        margin-left: -8%;
+    }
+    .stats img{
+        width: 60px; 
+    }
+    .statsText::after{
+        width: 50px;
+        height: 20px;
+        top: 20px;
+        right: 70px;
+    }
+    .performances{
+        height: 800px;
+    }
+    .milanoText{
+        left: -53%;
+    }
+    .parisText{
+        left: -53%;
+    }
+    .londonText{
+        right: -50%;
+    }
+    .moskvaText{
+        right: -50%;
+    }
+    .footer-left i{
+        font-size: 1.1em;
+        margin: 15px 5px 0;
+    }
+    footer h2{
+        font-size: 1.2em;
+    }
+    .stay::after{
+        bottom: 0px;
+        right: 5px;
+    }
+    .about::after{
+        bottom: -2px;
+        right: 25px;
+    }
+    .menu::after{
+        bottom: -2px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+
+
+    .heading h1{
+        font-size: 15px;
+        width: 90%;
+    }
+    .title::after{
+        height: 170px;
+    }
+    .title{
+        width: 40%; 
+        top: 150px;
+        left: 10px;
+    }
+    .heading::before{
+        width: 7%;
+        height: 7px;
+        top: 10px;
+        left: 20px;
+    }
+    .heading h1::after{
+        width: 10%;
+        height: 5px;
+        right: 70px;
+        bottom: 2px;
+    }
+    .heading::before{
+        width: 10%;
+        height: 5px;
+    }
+    .heading p{
+        font-size: 0.8em;
+        width: 70%;
+        margin-left: 70px;
+        margin-top: 10px;
+    }
+    .info-card::after{
+        bottom: 5px;
+    }
+    .info-text{
+        font-size: 12px;
+    }
+    .info-card{
+        height: 100px;
+        padding: 0 20px;
+        color: grey;
+        margin-bottom: 30px;
+        border-right: 1px solid grey;
+    }
+    .ev-pl li{
+        font-size: 1.1em;
+    }
+    .text-section{
+        width: 90%;
+        padding: 30px;
+        position: relative;
+        margin-top: -300px;
+    }
+    .text-section h3::after{
+        width: 10%;
+    }
+    .second-text{
+        margin-top: 130px;
+    }
+    .text-section p{
+        margin: 10px 0 0 10px;
+        font-size: 0.8em;
+        color: gray;
+    }
+    .stats{
+        width: 107%;
+        font-size: 10px;
+        margin-left: -8%;
+    }
+    .stats img{
+        width: 40px; 
+    }
+    .statsText::after{
+        width: 40px;
+        height: 10px;
+        top: 20px;
+        right: 60px;
+    }
+    .performances{
+        height: 500px;
+        width: 108%;
+        margin-left: -8%;
+    }
+    .paris{
+        height: 120px;
+    }
+    .parisText{
+        top: 20%;
+        left: -55%;
+        font-size: 0.8em;
+    }
+    .london{
+        height: 120px;
+        top: 120px;
+    }
+    .londonText{
+        top: 20%;
+        font-size: 0.8em;
+        right: -60%;
+    }
+    .milano{
+        height: 120px;
+        top: 240px;
+    }
+    .milanoText{
+        top: 20%;
+        left: -55%;
+        font-size: 0.8em;
+    }
+    .moskva{
+        height: 120px;
+        top: 360px;
+    }
+    .moskvaText{
+        top: 20%;
+        right: -60%;
+        font-size: 0.8em;
+    }
 }
