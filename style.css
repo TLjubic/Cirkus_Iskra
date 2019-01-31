@@ -2,16 +2,18 @@
     margin: 0;
     padding: 0;
 }
-body{
+body {
     font-family: 'Redressed', cursive;
 }
 /*
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     display: none;
 }
 */
 
-.fixed-menu{
+/* Fixed menu-bar */
+
+.fixed-menu {
     width: 7%;
     height: 100%;
     position: fixed;
@@ -27,57 +29,58 @@ body{
     font-family: 'Staatliches', cursive;
     box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.75);
 }
-.bc-color{
+.bc-color {
     background-color: #191919;
 }
-.items-center li{
+.items-center li {
     display: block;
     transition: 0.5s;
     margin-bottom: 15px;
 }
-.items-center li:hover a{
+.items-center li:hover a {
     color: rgb(177, 177, 0);
     padding-left: 10px;
     display: block;
 }
 /*
-.items-center span{
+.items-center span {
     margin-right: 30px;
 }
 */
-.items-center{
+.items-center {
     display: grid;
     width: 100%;
     justify-items: center;
     grid-row-gap: 5px;
 }
-.fixed-menu i{
+.fixed-menu i {
     font-size: 30px; 
     padding: 10px;
 }
-.fixed-menu a{
+.fixed-menu a {
     text-decoration: none;
     color: gray;
 }
-.menu-logo a{
+.menu-logo a {
     font-size: 20px;
     display: block;
     color: yellow;
 }
 /*
-.fixed-menu:hover{
+.fixed-menu:hover {
     width: 15%; 
 }
-.fixed-menu:hover li{
+.fixed-menu:hover li {
     margin-left: 10px;
 }
-li:hover a{
+li:hover a {
     color: white;
 }
 */
 
 /* Header */
-header{
+
+header {
     width: 100%;
     padding: 0;
     background-attachment: fixed;
@@ -94,7 +97,7 @@ header{
     width: 100%;
     z-index: -100;
 }
-.title{
+.title {
     color: white;
     width: 30%; 
     position: absolute;
@@ -103,7 +106,7 @@ header{
     left: 150px;
     
   }
-  .title::after{
+  .title::after {
     content: '';
     display: block;
     height: 280px;
@@ -115,13 +118,13 @@ header{
     right: -30px;
     border-right: 5px solid yellow;
   }
-  .heading{
+  .heading {
     position: relative;
     font-size: 1.2em;
     line-height: 1;
     z-index: 10px;
   }
-  .heading::before{
+  .heading::before {
     content: '';
     display: block;
     width: 10%;
@@ -131,7 +134,7 @@ header{
     top: 25px;
     left: 0;
   }
-  .heading h1::after{
+  .heading h1::after {
     content: '';
     display: block;
     width: 9%;
@@ -142,25 +145,26 @@ header{
     right: 250px;
     transform: rotate(110deg);
   }
-  .heading h1{
+  .heading h1 {
     position: relative;
     left: 50px;
     font-family: 'Fjalla One', sans-serif;
   }
-  .heading p{
+  .heading p {
     width: 80%;
     margin-left: 120px;
     margin-top: 30px;
     color: grey;
     font-size: 1.3em;
   }
- .title span{
+ .title span {
     color: yellow; 
   }
 
 
 /* Info events*/
-.events{
+
+.events {
     width: 93%;
     margin: 100px 0 0 auto;
     height: 300px;
@@ -170,7 +174,7 @@ header{
     grid-row-gap: 1%;
     position: relative;
 }
-.ev-pl li{
+.ev-pl li {
     display: block; 
     position: relative;
     margin: 10px auto 10px 50%;
@@ -180,7 +184,7 @@ header{
     transition: 0.3s;
     width: 40%;
 }
-.ev-pl li::after{
+.ev-pl li::after {
     content: '';
     display: block;
     height: 20px;
@@ -193,16 +197,16 @@ header{
     right: 45%;
     z-index: -2;
 }
-.ev-pl li:hover{
+.ev-pl li:hover {
     padding-left: 50px;
 }
-.info{
+.info {
     background-color: #292929;
     width: 90%;
     margin: 0 5% 0 auto;
     position: relative;
 }
-.first-info{
+.first-info {
     width: 90%;
     height: 300px;
     position: absolute;
@@ -211,7 +215,7 @@ header{
     display: grid;
     grid-template-columns: 35% auto;
 }
-.first-info::after{
+.first-info::after {
     content: '';
     display: block;
     width: 100px;
@@ -221,7 +225,7 @@ header{
     top: -10px;
     right: -5px;
 }
-.first-info::before{
+.first-info::before {
     content: '';
     display: block;
     width: 100px;
@@ -232,14 +236,14 @@ header{
     right: -55px;
     transform: rotate(90deg);
 }
-.info-card{
+.info-card {
     height: 100px;
     padding: 50px;
     color: grey;
     margin-bottom: 5px;
     border-right: 1px solid grey;
 }
-.info-card::after{
+.info-card::after {
     content: '';
     display: block;
     position: absolute;
@@ -250,20 +254,20 @@ header{
     bottom: 20px;
     z-index: -2;
 }
-.info-card p{
+.info-card p {
     margin-bottom: 10px;
     font-family: 'Staatliches', cursive;
 }
 
-.info-text{
+.info-text {
     padding: 50px;
     color: grey;
     font-family: 'Lato', sans-serif;
 }
-.info-card img{
+.info-card img {
     margin: 2px 10px 0 0;
 }
-.info a{
+.info a {
     text-decoration: none;
     display: block;
     position: absolute;
@@ -275,41 +279,42 @@ header{
 
 /* Sections */
 /* Section about */
-.section-container{
+
+.section-container {
     width: 93%;
     padding: 20px 0;
     margin: 0 0 0 auto;
     margin-top: 30px;
     font-family: 'Lato', sans-serif;
 }
-.section{
+.section {
     width: 90%;
     margin: 50px auto 0;
     padding: 10px 0;
     position: relative;
 }
-.noColor-section{
+.noColor-section {
     width: 90%;
     margin: 0 auto;
     height: 450px; 
 }
-.noColor-section img{
+.noColor-section img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.imgColor-section{
+.imgColor-section {
     position: absolute;
     width: 50%;
     height: 350px; 
     margin-top: -100px;
 }
-.imgColor-section img{
+.imgColor-section img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.text-section{
+.text-section {
     width: 30%;
     padding: 30px;
     position: absolute;
@@ -319,12 +324,12 @@ header{
     color: #353535;
     font-family: 'Lato', sans-serif;
 }
-.text-section h3{
+.text-section h3 {
     font-size: 1.5em;
     position: relative;
     z-index: 10;
 }
-.text-section h3::after{
+.text-section h3::after {
     content: '';
     display: block;
     height: 20px;
@@ -336,12 +341,12 @@ header{
     z-index: -1;
     transform: rotate(-10deg);
 }
-.text-section p{
+.text-section p {
     margin: 10px 0 0 10px;
     font-size: 1.1em;
     color: gray;
 }
-.text-section a{
+.text-section a {
     display: block;
     color: yellow;
     margin: 10px 0 0 10px;
@@ -352,46 +357,47 @@ header{
     border-radius: 5px;
 }
 
-.sec2{
+.sec2 {
     margin-top: 350px; 
     padding: 20px 0;
 }
-.left{
+.left {
     position: relative;
     left: 0;
     top: -50px;
 }
-.right{
+.right {
     right: 0;
 } 
-.first-bg{
+.first-bg {
     opacity: 0;
     transition: 1s;
 }
-.first-img{
+.first-img {
     transition: 2s;
     margin-left: -700px;
 }
-.first-text{
+.first-text {
     transition: 1s;
     opacity: 0;
 }
-.second-bg{
+.second-bg {
     opacity: 0;
     transition: 1s;
 }
-.second-img, .second-text{
+.second-img, .second-text {
     transition: 1s;
     opacity: 0;
 }
-.i1, .i2, .i3, .i4{
+.i1, .i2, .i3, .i4 {
     opacity: 0;
     transition: 1s;
 }
 
 
 /* Stats */
-.stats{
+
+.stats {
     background-color: #191919;
     padding: 30px 0; 
     width: 100%;
@@ -407,12 +413,12 @@ header{
     font-family: 'Lato', sans-serif;
     z-index: -10;
 }
-.statsText{
+.statsText {
     position: relative;
     font-weight: bold;
     margin-top: 20px;
 }
-.statsText::after{
+.statsText::after {
     content: '';
     display: block;
     width: 100px;
@@ -425,7 +431,7 @@ header{
     right: 120px;
     z-index: -1;
 }
-.stats::before{
+.stats::before {
     content: '';
     display: block;
     width: 108%;
@@ -440,7 +446,7 @@ header{
     z-index: -50;
     border-top: 3px solid rgb(177, 177, 0);
 }
-.stats::after{
+.stats::after {
     content: '';
     display: block;
     width: 108%;
@@ -459,7 +465,7 @@ header{
 
 
 /* Performances */
-.performances{
+.performances {
     height: 1000px;
     margin-top: 200px;
     width: 100%;
@@ -467,7 +473,7 @@ header{
     position: relative;
     color: grey;
 }
-.performances::before{
+.performances::before {
     content: '';
     display: block;
     height: 1300px;
@@ -477,38 +483,38 @@ header{
     left: 50%; 
     top: -30px; 
 }
-.performances a{
+.performances a {
     text-decoration: none;
     color: gray;
 }
-.paris{
+.paris {
     position: absolute;
     right: 0; 
     height: 350px;
     width: 40%;
     transition: 1s;
 }
-.paris-opacity{
+.paris-opacity {
     opacity: 0;
 }
-.parisImg{
+.parisImg {
     width: 100%;
     height: 100%;
     position: relative;
 }
-.parisImg img{
+.parisImg img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-.parisText{
+.parisText {
     position: absolute;
     top: 42%;
     left: -30%;
     background-color: white;
     padding: 20px 5px 20px 20px;
 }
-.london{
+.london {
     position: absolute;
     left: 0; 
     top: 250px;
@@ -516,20 +522,20 @@ header{
     width: 40%;
     transition: 1s;
 }
-.london-opacity{
+.london-opacity {
     opacity: 0;
 }
-.londonImg{
+.londonImg {
     width: 100%;
     height: 100%;
     position: relative;
 }
-.londonImg img{
+.londonImg img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-.londonText{
+.londonText {
     position: absolute;
     top: 42%;
     right: -30%;
@@ -537,7 +543,7 @@ header{
     padding: 20px 20px 20px 5px;
 }
 
-.milano{
+.milano {
     position: absolute;
     right: 0; 
     top: 500px; 
@@ -545,20 +551,20 @@ header{
     width: 40%;
     transition: 1s;
 }
-.milano-opacity{
+.milano-opacity {
     opacity: 0;
 }
-.milanoImg{
+.milanoImg {
     width: 100%;
     height: 100%;
     position: relative;
 }
-.milanoImg img{
+.milanoImg img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-.milanoText{
+.milanoText {
     position: absolute;
     top: 42%;
     left: -30%;
@@ -566,7 +572,7 @@ header{
     padding: 20px 5px 20px 20px;
 }
 
-.moskva{
+.moskva {
     position: absolute;
     left: 0; 
     top: 750px;
@@ -574,20 +580,20 @@ header{
     width: 40%;
     transition: 1s;
 }
-.moskva-opacity{
+.moskva-opacity {
     opacity: 0;
 }
-.moskvaImg{
+.moskvaImg {
     width: 100%;
     height: 100%;
     position: relative;
 }
-.moskvaImg img{
+.moskvaImg img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-.moskvaText{
+.moskvaText {
     position: absolute;
     top: 42%;
     right: -30%;
@@ -597,19 +603,19 @@ header{
 
 
 /* About Us - page */
-.about-header{
+.about-header {
     display: grid;
     grid-template-columns: 50% auto;
 }
-.about-text{
+.about-text {
     text-align: left;
     margin-left: 100px; 
 }
-.about-text h2{
+.about-text h2 {
     font-size: 40px;
     position: relative;
 }
-.about-text h2::after{
+.about-text h2::after {
     content: '';
     display: block;
     height: 35px;
@@ -621,23 +627,23 @@ header{
     z-index: -2;
     transform: rotate(-5deg);
 }
-.about-text h4{
+.about-text h4 {
     color: rgb(177, 177, 0);
 }
-.about-text p{
+.about-text p {
     margin: 50px 0 0 -40px;
     padding: 10px 50px 0 10px;
     line-height: 1.4;
     font-size: 18px;
     color: gray;
 }
-.about-img{
+.about-img {
     width: 100%;
     height: 400px;
     position: relative;
     margin-top: 80px;
 }
-.about-img::before{
+.about-img::before {
     content: '';
     display: block;
     height: 400px;
@@ -648,13 +654,13 @@ header{
     right: -30px;
     z-index: -2;
 }
-.about-img img{
+.about-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transform: rotate(-3deg);
 }
-.event-img img{
+.event-img img {
     transform: rotate(3deg);
 }
 
@@ -667,23 +673,23 @@ header{
     color: black;
 }
 
-.testimonials{
+.testimonials {
     width: 50%;
     margin: 50px auto;
     text-align: center;
     font-size: 20px;
     color: gray;
 }
-.testimonials h3{
+.testimonials h3 {
     color: black;
 }
-.testimonials h4{
+.testimonials h4 {
     text-align: left;
     margin: 0 0 50px -50px;
     position: relative;
     text-transform: uppercase;
 }
-.testimonials h4::after{
+.testimonials h4::after {
     content: '';
     display: block;
     height: 30px;
@@ -695,16 +701,16 @@ header{
     z-index: -1;
     transform: rotate(-5deg);
 }
-.testimonials p{
+.testimonials p {
     margin-top: 20px;
 }
-.testimonials span{
+.testimonials span {
     font-weight: bold;
 }
 
 
 /* Events - page */
-.event-section{
+.event-section {
     width: 80%;
     margin: 100px auto 0;
     background-color: #292929;
@@ -712,7 +718,7 @@ header{
     color: grey;
     position: relative;
 }
-.event-section::after{
+.event-section::after {
     content: '';
     display: block;
     position: absolute;
@@ -723,22 +729,22 @@ header{
     right: -20px;
     z-index: -2;
 }
-.event-grid{
+.event-grid {
     display: grid;
     grid-template-columns: 50% auto;
     margin: 50px 0 100px;
 }
-.event-title{
+.event-title {
     height: 300px;
     text-align: center;
     position: relative;
 }
-.event-title img{
+.event-title img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.event-title::after{
+.event-title::after {
     content: '';
     display: block;
     position: absolute;
@@ -748,56 +754,56 @@ header{
     bottom: 0;
     right: 0;
 }
-.event-info h3{
+.event-info h3 {
     margin-bottom: 30px;
     text-align: center;
     font-size: 25px;
 }
-.event-info img{
+.event-info img {
     margin-right: 5px;
     margin-left: 10px;
 }
-.event-info p:nth-child(2){
+.event-info p:nth-child(2) {
     text-align: center;
 }
-.event-info span{
+.event-info span {
     margin-left: 60px;
 }
-.event-info-text{
+.event-info-text {
     padding: 20px;
 }
 
 
 /* Artists - page */
-.artists-section{
+.artists-section {
     width: 95%;
     margin: 100px auto 0;
     position: relative;
     background-color: #292929;
     z-index: -10;
 }
-.back{
+.back {
     position: absolute;
     left: 120px;
     top: 20px;
 }
-.artists-img{
+.artists-img {
     width: 100%;
     height: 400px;
     position: relative;
 }
-.artists-img img{
+.artists-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.rotate-left img{
+.rotate-left img {
     transform: rotate(3deg);
 }
-.rotate-right img{
+.rotate-right img {
     transform: rotate(-3deg);
 }
-.artists-img::before{
+.artists-img::before {
     content: '';
     display: block;
     height: 400px;
@@ -808,18 +814,18 @@ header{
     right: -30px;
     z-index: -2;
 }
-.artists-grid{
+.artists-grid {
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 10%;
 }
-.artists-second{
+.artists-second {
     margin-top: 150px;
 }
-.artists-margin{
+.artists-margin {
     margin-top: 50px;
 }
-.title-artists-left{
+.title-artists-left {
     position: absolute;
     top: 50px;
     right: -150px;
@@ -827,12 +833,12 @@ header{
     font-size: 35px;
     line-height: 0.7;
 }
-.title-artists-left span{
+.title-artists-left span {
     font-size: 20px;
     color: rgb(177, 177, 0);
     padding: 10px;
 }
-.title-artists-right{
+.title-artists-right {
     position: absolute;
     bottom: 10px;
     left: -100px;
@@ -840,7 +846,7 @@ header{
     font-size: 35px;
     line-height: 0.7;
 }
-.title-artists-right span{
+.title-artists-right span {
     font-size: 20px;
     color: rgb(177, 177, 0);
     padding: 10px;
@@ -848,10 +854,10 @@ header{
 
 
 /* Gallery - page */
-.gallery-section{
+.gallery-section {
     margin-top: 100px;
 }
-.gallery-images{
+.gallery-images {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     width: 110%;
@@ -860,7 +866,7 @@ header{
     bottom: 0;
     z-index: 2;
 }
-.gallery-images::before{
+.gallery-images::before {
     content: '';
     display: block;
     position: absolute;
@@ -869,36 +875,36 @@ header{
     z-index: -1;
     bottom: 0;
 }
-.gallery-img-left{
+.gallery-img-left {
     transform: rotate(2deg);
     left: 50%;
     margin-left: -61%;
 }
-.gallery-img-right{
+.gallery-img-right {
     transform: rotate(-2deg);
     right: 50%;
     margin-right: -60%;
 }
-.gallery-image{
+.gallery-image {
     height: 80px;
 }
-.gallery-image img{
+.gallery-image img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     filter: grayscale(100%);
     transition: 0.2s;
 }
-.gallery-image img:hover{
+.gallery-image img:hover {
     filter: grayscale(0%);
 }
-.gallery-bg{
+.gallery-bg {
     background-color: blue;
 }
 
 
 /* Contact - page */
-.contact-form{
+.contact-form {
     padding: 20px;
     background-color: rgb(177, 177, 0);
     margin-top: 150px;
@@ -906,7 +912,7 @@ header{
     right: 0;
     width: 35%;
 }
-input{
+input {
     font-size: 18px;
     background-color: rgb(177, 177, 0);
     width: 100%;
@@ -917,26 +923,26 @@ input{
     margin-bottom: 5px;
     font-size: 20px;
 }
-input:focus{
+input:focus {
     color: rgb(209, 209, 209);
     outline: none;
 }
-textarea{
+textarea {
     width: 100%;
     margin-top: 20px;
     background-color: rgb(238, 238, 238);
 }
-.contact-form p{
+.contact-form p {
     color: rgb(209, 209, 209);
     margin-top: 20px;
 }
-.contact-icons img{
+.contact-icons img {
     margin-right: 10px;
 }
 
 
 /* Footer */
-footer{
+footer {
     width: auto;
     background-color: #191919;
     padding: 100px 10px;
@@ -949,7 +955,7 @@ footer{
     font-family: 'Lato', sans-serif;
     border-top: 4px solid rgb(177, 177, 0);
 }
-footer::after{
+footer::after {
     content: '';
     display: block;
     position: absolute;
@@ -962,72 +968,71 @@ footer::after{
     margin-left: -15px;
     transform: rotate(-45deg);
 }
-footer h2{
+footer h2 {
     color: rgb(190, 190, 190);
     margin-bottom: 50px;
 }
-.footer-middle h1{
+.footer-middle h1 {
     text-align: center;
     color: rgb(177, 177, 0); 
 }
-.footer-container{
+.footer-container {
     display: grid;
     grid-template-columns: 33% 33% auto;
     grid-column-gap: 2%;
 }
-.footer-left p{
+.footer-left p {
     padding: 15px;
 }
-.footer-left i{
+.footer-left i {
     font-size: 2em;
     margin: 15px 15px 0;
     color: rgb(190, 190, 190);
 }
-.awfonts{
+.awfonts {
     width: 100%; 
     text-align:  center;
 }
 .footer-left {
     padding-left: 10px;
 }
-.footer-middle p{
+.footer-middle p {
     padding: 15px;
 }
-.footer-nav{
+.footer-nav {
     margin: 0;
     padding-top: 15px;
 }
-.footer-nav ul li{
+.footer-nav ul li {
     display: block;
     border-style: none;
     padding-top: 0px;
 }
-.footer-nav a{
+.footer-nav a {
     color: grey;
-    padding: 2px 0px 2px 2px;
     display: block;
     text-align: left;
     background-color: rgba(170, 170, 0, 0.1);
-    padding: 2px 0;
+    padding: 2px 0 2px 8px;
     margin: 2px 0;
     position: relative;
     text-decoration: none;
     letter-spacing: .1em;
 }
-.footer-nav a i{
+.footer-nav a i {
     position: absolute;
     right: 5px;
     top: 5px; 
 }
-.footer-nav li:hover a, .footer-nav li:hover i{
+.footer-nav li:hover a, .footer-nav li:hover i {
     color: white;
 }
-.footer-container h2{
+.footer-container h2 {
     position: relative;
     padding: 5px;
     width: 50%;
 }
-.stay::after{
+.stay::after {
     content: '';
     display: block;
     position: absolute;
@@ -1039,7 +1044,7 @@ footer h2{
     right: 35px;
     transform: rotate(-10deg);
 }
-.about::after{
+.about::after {
     content: '';
     display: block;
     position: absolute;
@@ -1051,7 +1056,7 @@ footer h2{
     right: 85px;
     transform: rotate(-10deg);
 }
-.menu::after{
+.menu::after {
     content: '';
     display: block;
     position: absolute;
@@ -1067,17 +1072,17 @@ footer h2{
 
 
 
-
+/* Mobile versions */
 
 @media (max-width: 1250px) {
     
-    .heading h1{
+    .heading h1 {
         font-size: 35px;
     }
-    .heading h1::after{
+    .heading h1::after {
         right: 230px;
     }
-    .heading p{
+    .heading p {
         font-size: 1.2em;
         width: 70%;
         margin-left: 100px;
@@ -1086,13 +1091,13 @@ footer h2{
 }
 @media (max-width: 1145px) {
     
-    .heading h1{
+    .heading h1 {
         font-size: 30px;
     }
-    .heading h1::after{
+    .heading h1::after {
         right: 200px;
     }
-    .heading p{
+    .heading p {
         font-size: 1.15em;
         width: 70%;
     }
@@ -1100,24 +1105,24 @@ footer h2{
 @media (max-width: 1000px) {
     
     
-    .heading h1{
+    .heading h1 {
         font-size: 25px;
     }
-    .heading h1::after{
+    .heading h1::after {
         right: 150px;
     }
-    .heading p{
+    .heading p {
         font-size: 1.1em;
         width: 70%;
     }
-    .title::after{
+    .title::after {
         height: 220px;
     }
-    .events{
+    .events {
         width: 90%;  
         margin: 0 auto;
     }
-    .events{
+    .events {
         display: grid;
         grid-template-columns: auto;
         position: relative;
@@ -1127,7 +1132,7 @@ footer h2{
     .ev-pl li:first-child {
         margin-left: 25%;
     }
-    .ev-pl li{
+    .ev-pl li {
         display: inline-block; 
         position: relative;
         margin: auto;
@@ -1137,83 +1142,83 @@ footer h2{
         transition: 0.3s;
         width: 15%;
     }
-    .ev-pl li:hover{
+    .ev-pl li:hover {
         padding-left: 0;
     }
-    .info{
+    .info {
         background-color: #292929;
         width: 90%;
         height: 300px;
         margin: 50px auto 0 7%;
         position: relative;
     }
-    .info-card{
+    .info-card {
         padding: 50px;
         color: grey;
         margin: 5px;
         border-right: 1px solid grey;
     }
-    .noColor-section{
+    .noColor-section {
         width: 90%;
         margin: 0 auto;
         height: 350px; 
     }
-    .imgColor-section{
+    .imgColor-section {
         position: absolute;
         width: 50%;
         height: 250px; 
         margin-top: -100px;
     }
-    .text-section{
+    .text-section {
         width: 90%;
         padding: 30px;
         position: relative;
         margin-top: -250px;
     }
-    .text-section h3::after{
+    .text-section h3::after {
         width: 10%;
     }
-    .second-text{
+    .second-text {
         margin-top: 200px;
     }
-    .text-section p{
+    .text-section p {
         margin: 10px 0 0 10px;
         font-size: 1.1em;
         color: gray;
     }
-    .performances{
+    .performances {
         height: 800px;
     }
-    .paris{
+    .paris {
         height: 250px;
     }
-    .parisText{
+    .parisText {
         top: 35%;
         left: -33%;
         padding: 20px 5px 20px 20px;
     }
-    .london{
+    .london {
         height: 250px;
         top: 200px;
     }
-    .londonText{
+    .londonText {
         top: 35%;
         padding: 20px 5px 20px 20px;
     }
-    .milano{
+    .milano {
         height: 250px;
         top: 400px;
     }
-    .milanoText{
+    .milanoText {
         top: 35%;
         left: -33%;
         padding: 20px 5px 20px 20px;
     }
-    .moskva{
+    .moskva {
         height: 250px;
         top: 600px;
     }
-    .moskvaText{
+    .moskvaText {
         top: 35%;
         padding: 20px 5px 20px 20px;
     }
@@ -1221,31 +1226,31 @@ footer h2{
 }
 @media (max-width: 800px) {
     
-    .heading h1{
+    .heading h1 {
         font-size: 25px;
         left: 40px;
     }
-    .heading h1::after{
+    .heading h1::after {
         right: 120px;
         bottom: 1px;
     }
-    .heading p{
+    .heading p {
         font-size: 1em;
         width: 70%;
     }
-    .title::after{
+    .title::after {
         height: 200px;
         right: -30px;
     }
-    .title{
+    .title {
         width: 40%; 
         left: 20px;
         top: 200px;
     }
-    .fixed-menu{
+    .fixed-menu {
         display: none; 
     }
-    .info-card{
+    .info-card {
         height: 100px;
         padding: 20px 0 0 10px;
         margin-top: 40px;
@@ -1253,148 +1258,148 @@ footer h2{
         margin-bottom: 5px;
         border-right: 1px solid grey;
     }
-    .events{
+    .events {
         margin-left: 1px;
     }
-    .info a{
+    .info a {
         right: 7%;
         bottom: 15%;
     }
-    .noColor-section{
+    .noColor-section {
         width: 100%;
         margin: 0 auto 0 -3%;
         height: 300px; 
     }
-    .imgColor-section{
+    .imgColor-section {
         position: absolute;
         width: 50%;
         height: 200px; 
         margin-top: -80px;
     }
-    .text-section{
+    .text-section {
         width: 90%;
         padding: 30px;
         position: relative;
         margin-top: -250px;
     }
-    .text-section h3::after{
+    .text-section h3::after {
         width: 10%;
     }
-    .second-text{
+    .second-text {
         margin-top: 200px;
     }
-    .text-section p{
+    .text-section p {
         margin: 10px 0 0 10px;
         font-size: 1em;
         color: gray;
     }
-    .stats{
+    .stats {
         width: 108%;
         font-size: 20px;
         margin-left: -8%;
     }
-    .stats img{
+    .stats img {
         width: 80px; 
     }
-    .statsText::after{
+    .statsText::after {
         width: 70px;
         height: 30px;
         top: 20px;
         right: 100px;
     }
-    .performances{
+    .performances {
         height: 800px;
         width: 108%;
         margin-left: -8%;
     }
-    .paris{
+    .paris {
         height: 200px;
     }
-    .parisText{
+    .parisText {
         top: 32%;
         left: -33%;
         padding: 20px 5px 20px 20px;
     }
-    .london{
+    .london {
         height: 200px;
     }
-    .londonText{
+    .londonText {
         top: 32%;
         padding: 20px 5px 20px 20px;
     }
-    .milano{
+    .milano {
         height: 200px;
     }
-    .milanoText{
+    .milanoText {
         top: 32%;
         left: -33%;
         padding: 20px 5px 20px 20px;
     }
-    .moskva{
+    .moskva {
         height: 200px;
     }
-    .moskvaText{
+    .moskvaText {
         top: 32%;
         padding: 20px 5px 20px 20px;
     }
-    footer{
+    footer {
         width: auto;
         margin-left: -8%;
     }
-    .footer-left i{
+    .footer-left i {
         font-size: 1.5em;
     }
-    footer p{
+    footer p {
         font-size: 0.8em;
     }
-    .stay::after{
+    .stay::after {
         bottom: 0px;
         right: 25px;
     }
-    .about::after{
+    .about::after {
         bottom: -2px;
         right: 45px;
     }
-    .menu::after{
+    .menu::after {
         bottom: -2px;
         right: 40px;
     }
-    .about-img{
+    .about-img {
         height: 260px; 
     }
-    .about-text p{
+    .about-text p {
         font-size: 1em;
     }
-    .back{
+    .back {
         left: 20px; 
     }
-    .about-img::before{
+    .about-img::before {
         height: 260px;
     }
-    .event-section{
+    .event-section {
         width: 90%;
         margin-left: -1%;
     }
-    .event-grid{
+    .event-grid {
         display: grid;
         grid-template-columns: auto;
         margin: 50px 0 100px;
     }
-    .event-title{
+    .event-title {
         height: 300px;
     }
-    .about-header{
+    .about-header {
         display: grid;
         grid-template-columns: 90%;
         margin-left: -1%;
     }
-    .about-text{
+    .about-text {
         text-align: left;
         margin-left: 50px; 
         margin-top: 100px;
         width: 90%;
     }
-    .contact-form{
+    .contact-form {
         padding: 20px;
         background-color: rgb(177, 177, 0);
         margin-top: 150px;
@@ -1404,47 +1409,47 @@ footer h2{
 }
 @media (max-width: 600px) {
 
-    .mobile{
+    .mobile {
         width: 100%; 
     }
-    .heading h1{
+    .heading h1 {
         font-size: 15px;
         width: 90%;
     }
-    .title::after{
+    .title::after {
         height: 170px;
     }
-    .title{
+    .title {
         width: 40%; 
         top: 200px;
         left: 10px;
     }
-    .heading::before{
+    .heading::before {
         width: 7%;
         height: 7px;
         top: 10px;
         left: 20px;
     }
-    .heading h1::after{
+    .heading h1::after {
         width: 7%;
         height: 7px;
         right: 90px;
     }
-    .heading p{
+    .heading p {
         font-size: 0.8em;
         width: 70%;
         margin-left: 80px;
     }
-    .info-text{
+    .info-text {
         padding: 30px;
         color: grey;
         font-family: 'Lato', sans-serif;
         font-size: 15px;
     }
-    .info-card img{
+    .info-card img {
         margin: 2px 10px 0 0;
     }
-    .info a{
+    .info a {
         right: 5%;
         bottom: 10%;
     }
@@ -1455,121 +1460,121 @@ footer h2{
     .ev-pl {
         margin-left: -2%;
     }
-    .info-card::after{
+    .info-card::after {
         bottom: 10px;
     }
-    .noColor-section{
+    .noColor-section {
         width: 100%;
         margin: 0 auto 0 -3%;
         height: 200px; 
     }
-    .imgColor-section{
+    .imgColor-section {
         position: absolute;
         width: 50%;
         height: 120px; 
         margin-top: -50px;
     }
-    .text-section{
+    .text-section {
         width: 90%;
         padding: 30px;
         position: relative;
         margin-top: -300px;
         margin-left: -30px;
     }
-    .text-section h3::after{
+    .text-section h3::after {
         width: 10%;
     }
-    .second-text{
+    .second-text {
         margin-top: 100px;
     }
-    .text-section p{
+    .text-section p {
         margin: 10px 0 0 10px;
         font-size: 0.9em;
         color: gray;
     }
-    .stats{
+    .stats {
         width: 108%;
         font-size: 15px;
         margin-left: -8%;
     }
-    .stats img{
+    .stats img {
         width: 60px; 
     }
-    .statsText::after{
+    .statsText::after {
         width: 50px;
         height: 20px;
         top: 20px;
         right: 70px;
     }
-    .performances{
+    .performances {
         height: 800px;
     }
-    .milanoText{
+    .milanoText {
         left: -53%;
     }
-    .parisText{
+    .parisText {
         left: -53%;
     }
-    .londonText{
+    .londonText {
         right: -50%;
     }
-    .moskvaText{
+    .moskvaText {
         right: -50%;
     }
-    .footer-left i{
+    .footer-left i {
         font-size: 1.1em;
         margin: 15px 5px 0;
     }
-    footer h2{
+    footer h2 {
         font-size: 1.2em;
     }
-    .stay::after{
+    .stay::after {
         bottom: 0px;
         right: 5px;
     }
-    .about::after{
+    .about::after {
         bottom: -2px;
         right: 25px;
     }
-    .menu::after{
+    .menu::after {
         bottom: -2px;
         right: 20px;
     }
-    .event-title{
+    .event-title {
         height: 200px;
     }
-    .event-section{
+    .event-section {
         width: 80%;
         margin-left: -1%;
     }
-    .event-info{
+    .event-info {
         margin-left: -5%;
         font-size: 0.8em;
     }
-    .event-info span{
+    .event-info span {
         margin-left: 1%;
     }
-    .testimonials{
+    .testimonials {
         width: 80%;
         font-size: 15px;
     }
-    .artists-grid{
+    .artists-grid {
         display: grid;
         grid-template-columns: 88%;
     }
-    .artists-section{
+    .artists-section {
         margin-left: -1%;
     }
-    .title-artists-left{
+    .title-artists-left {
         right: -50px;
     }
-    .title-artists-right{
+    .title-artists-right {
         left: -20px;
     }
-    .gallery-images{
+    .gallery-images {
         height: 20px; 
     }
-    .gallery-image{
+    .gallery-image {
         height: 50px;
     }
 }
@@ -1577,128 +1582,128 @@ footer h2{
 @media (max-width: 400px) {
 
 
-    .heading h1{
+    .heading h1 {
         font-size: 15px;
         width: 90%;
     }
-    .title::after{
+    .title::after {
         height: 170px;
     }
-    .title{
+    .title {
         width: 40%; 
         top: 150px;
         left: 10px;
     }
-    .heading::before{
+    .heading::before {
         width: 7%;
         height: 7px;
         top: 10px;
         left: 20px;
     }
-    .heading h1::after{
+    .heading h1::after {
         width: 10%;
         height: 5px;
         right: 70px;
         bottom: 2px;
     }
-    .heading::before{
+    .heading::before {
         width: 10%;
         height: 5px;
     }
-    .heading p{
+    .heading p {
         font-size: 0.8em;
         width: 70%;
         margin-left: 70px;
         margin-top: 10px;
     }
-    .info-card::after{
+    .info-card::after {
         bottom: 5px;
     }
-    .info-text{
+    .info-text {
         font-size: 12px;
     }
-    .info-card{
+    .info-card {
         height: 100px;
         padding: 0 20px;
         color: grey;
         margin-bottom: 30px;
         border-right: 1px solid grey;
     }
-    .ev-pl li{
+    .ev-pl li {
         font-size: 1.1em;
     }
-    .text-section{
+    .text-section {
         width: 90%;
         padding: 30px;
         position: relative;
         margin-top: -300px;
     }
-    .text-section h3::after{
+    .text-section h3::after {
         width: 10%;
     }
-    .second-text{
+    .second-text {
         margin-top: 130px;
     }
-    .text-section p{
+    .text-section p {
         margin: 10px 0 0 10px;
         font-size: 0.8em;
         color: gray;
     }
-    .stats{
+    .stats {
         width: 107%;
         font-size: 10px;
         margin-left: -8%;
     }
-    .stats img{
+    .stats img {
         width: 40px; 
     }
-    .statsText::after{
+    .statsText::after {
         width: 40px;
         height: 10px;
         top: 20px;
         right: 60px;
     }
-    .performances{
+    .performances {
         height: 500px;
         width: 108%;
         margin-left: -8%;
     }
-    .paris{
+    .paris {
         height: 120px;
     }
-    .parisText{
+    .parisText {
         top: 20%;
         left: -55%;
         font-size: 0.8em;
     }
-    .london{
+    .london {
         height: 120px;
         top: 120px;
     }
-    .londonText{
+    .londonText {
         top: 20%;
         font-size: 0.8em;
         right: -60%;
     }
-    .milano{
+    .milano {
         height: 120px;
         top: 240px;
     }
-    .milanoText{
+    .milanoText {
         top: 20%;
         left: -55%;
         font-size: 0.8em;
     }
-    .moskva{
+    .moskva {
         height: 120px;
         top: 360px;
     }
-    .moskvaText{
+    .moskvaText {
         top: 20%;
         right: -60%;
         font-size: 0.8em;
     }
-    .event-section{
+    .event-section {
         width: 80%;
         margin-left: -1%;
     }
